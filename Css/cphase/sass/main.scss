@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background: yellow;
+  padding: 50px;
+  width: 100%;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    background: red;
+    width: 50%;
+    opacity: 0;
+    .child {
+      background: blue;
+    }
+  }
+
+  .child {
+    background: black;
+    height: 300px;
+    transition: all 0.5s ease-in-out;
+  }
+}

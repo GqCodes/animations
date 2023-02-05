@@ -1,0 +1,1 @@
+*{box-sizing:border-box}.parent{background:#ff0;padding:50px;width:100%;opacity:1;transition:all 1s ease-in-out}.parent:hover{background:red;width:50%;opacity:0}.parent:hover .child{background:blue}.parent .child{background:#000;height:300px;transition:all .5s ease-in-out}/*# sourceMappingURL=main.min.css.map */
