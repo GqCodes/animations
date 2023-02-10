@@ -1,8 +1,69 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.parent {
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  .menu {
+    background: black;
+    color: white;
+    li {
+      list-style: none;
+      padding: 20px;
+      border: 1px solid black;
+      display: inline-block;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        & > ul.first {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      ul.first {
+        background: red;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        top: 58px;
+        left: -1px;
+        width: 200px;
+        transition: all 0.2s ease-in-out;
+        li {
+          display: block;
+        }
+      }
+      ul.second {
+        background: purple;
+        position: absolute;
+        display: none;
+        top: -1px;
+        left: 100%;
+        width: 200px;
+        li {
+          display: block;
+        }
+      }
+      ul.third {
+        background: green;
+        position: absolute;
+        display: none;
+        top: -1px;
+        left: 100%;
+        width: 200px;
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* .parent {
   background: yellow;
   padding: 50px;
   width: 100%;
@@ -24,3 +85,4 @@
     transition: all 0.5s ease-in-out;
   }
 }
+*/
